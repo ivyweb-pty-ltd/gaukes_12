@@ -17,7 +17,8 @@
     'version': '3.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['crm',
+    'depends': ['documents',
+                'crm',
                 'sale_management',
                 'sign',
                 'website_sale',
@@ -30,7 +31,6 @@
                 'hr',
                 'marketing_automation',
                 'account_reports',
-                'documents',
                 # 'attooh_sms'
                 ],
 
