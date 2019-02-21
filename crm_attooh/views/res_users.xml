@@ -8,12 +8,12 @@
             <field name="arch" type="xml">
                 <field name="login" position="after">
                     <group>
-                        <field name="is_financial_advisor" groups="crm_attooh.financial_services_manager"/>
+                        <field name="is_financial_advisor" groups="crm_attooh.group_financial_services_manager"/>
                     </group>
                 </field>
                 <xpath expr="//page[2]" position="after">
                     <page string="Employee Roles" attrs="{'readonly':[('is_financial_advisor','=',False)]}">
-                        <field name="user_employee_roles_ids" groups="crm_attooh.financial_services_manager">
+                        <field name="user_employee_roles_ids" groups="crm_attooh.group_financial_services_manager">
                             <tree editable="bottom">
                                 <field name="employee_role_id"/>
                                 <field name="user_id"/>
