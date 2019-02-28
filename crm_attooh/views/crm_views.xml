@@ -131,7 +131,7 @@
                     <field name="name"/>
                     <field name="user_id"/>
                     <field name="mail_activity_id"/>
-                    <field name="completed"/>
+                    <!--<field name="completed"/>-->
                 </tree>
             </field>
         </record>
