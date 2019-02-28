@@ -236,10 +236,11 @@ class crm_lead(models.Model):
         financial_product_id.crm_lead_id=res.id
         return res
 
-    @api.depends('service_activity_ids','responsible_id','stage_id')
-    def _activities_changed(self):
-        self.activity_ids.lead_id=1
-        return
+#    @api.depends('service_activity_ids','responsible_id','stage_id')
+#    def _activities_changed(self):
+        #TODO:
+#        self.activity_ids.lead_id=1
+
 
     @api.one
     def write(self, vals):

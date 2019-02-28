@@ -61,7 +61,13 @@
                         </group>
                     </page>
                     <page string="Process">
-                        <field name="service_activity_ids"/>
+                        <field name="service_activity_ids">
+                            <tree decoration-muted="completed==True">
+                                <field name="reference"/>
+                                <field name="name"/>
+                                <field name="completed" invisible="1"/>
+                            </tree>
+                        </field>
                     </page>
                 </xpath>
                 <field name="team_id" position="replace"/>
